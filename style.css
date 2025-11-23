@@ -4,6 +4,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: #e0e0e0;
+  user-select: none;       /* blokuje zaznaczanie */
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
 }
 
 .circle {
@@ -124,3 +128,4 @@ djęcia */
 .item:nth-child(23) { --color: #bd45a0; }
 .item:nth-child(24) { --color: #bd4687; }
 .item:nth-child(25) { --color: #b03f5c; }
+

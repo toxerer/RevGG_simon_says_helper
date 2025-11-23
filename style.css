@@ -350,7 +350,7 @@ djęcia */
 
 .dot-right::before {
   position: absolute;
-  top: -7px;
+  top: 0px;
   right: -12px;
   content: attr(data-num);
   color: #939393;
@@ -359,7 +359,7 @@ djęcia */
 
 .dot-right::after {
   position: absolute;
-  top: -19px;
+  top: -13px;
   right: -25px;
   content: attr(data-num2);
   color: #939393;
@@ -480,4 +480,5 @@ djęcia */
 .item::before {
   color: #e2e2e2;
 }
+
 

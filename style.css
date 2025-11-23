@@ -4,6 +4,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: #e0e0e0;
+     user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
 }
 
 .circle {
@@ -476,3 +480,4 @@ djęcia */
 .item::before {
   color: #e2e2e2;
 }
+

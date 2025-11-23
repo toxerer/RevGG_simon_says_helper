@@ -4,16 +4,16 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: #e0e0e0;
-  user-select: none;       /* blokuje zaznaczanie */
-  -webkit-user-select: none; /* Safari/Chrome */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;    
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
 }
 
 .circle {
   position: relative;
-  width: 480px;  /* szerzej */
-  height: 360px; /* niżej — elipsa */
+  width: 480px;
+  height: 360px; 
   margin: 40px auto;
 }
 
@@ -52,7 +52,7 @@ body {
   font-size: 24px;
   color: #fff;
   font-weight: bold;
-  pointer-events: none; /* nie przeszkadza w klikaniu */
+  pointer-events: none;
   white-space: nowrap;
   line-height: 24px;
   z-index: 99;
@@ -85,8 +85,6 @@ body {
   top: 3px;
 }
 
-
-
 .preview-img {
   position: absolute;
   top: 22px;
@@ -101,8 +99,6 @@ body {
   cursor: pointer;
 }
 
-/* 🎨 25 identycznych kolorów pobranych z twojego z
-djęcia */
 .item:nth-child(1)  { --color: #bc3d38; }
 .item:nth-child(2)  { --color: #bb6936; }
 .item:nth-child(3)  { --color: #b68639; }
@@ -128,4 +124,3 @@ djęcia */
 .item:nth-child(23) { --color: #bd45a0; }
 .item:nth-child(24) { --color: #bd4687; }
 .item:nth-child(25) { --color: #b03f5c; }
-

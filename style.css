@@ -4,16 +4,12 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: #e0e0e0;
-  user-select: none;    
-  -webkit-user-select: none;
-  -moz-user-select: none; 
-  -ms-user-select: none; 
 }
 
 .circle {
   position: relative;
-  width: 480px;
-  height: 360px; 
+  width: 480px;  /* szerzej */
+  height: 360px; /* niżej — elipsa */
   margin: 40px auto;
 }
 
@@ -52,11 +48,12 @@ body {
   font-size: 24px;
   color: #fff;
   font-weight: bold;
-  pointer-events: none;
+  pointer-events: none; /* nie przeszkadza w klikaniu */
   white-space: nowrap;
   line-height: 24px;
   z-index: 99;
 }
+
 
 .item-top .arrow-number {
   position: absolute;
@@ -64,6 +61,14 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.item-top-right .arrow-number {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .item-bottom .arrow-number {
   position: absolute;
@@ -85,6 +90,7 @@ body {
   top: 3px;
 }
 
+
 .preview-img {
   position: absolute;
   top: 22px;
@@ -99,6 +105,8 @@ body {
   cursor: pointer;
 }
 
+/* 🎨 25 identycznych kolorów pobranych z twojego z
+djęcia */
 .item:nth-child(1)  { --color: #bc3d38; }
 .item:nth-child(2)  { --color: #bb6936; }
 .item:nth-child(3)  { --color: #b68639; }
@@ -125,6 +133,289 @@ body {
 .item:nth-child(24) { --color: #bd4687; }
 .item:nth-child(25) { --color: #b03f5c; }
 
+
+.dot-bottom::before {
+  position: absolute;
+  left: 8px;
+  bottom: -25px;
+  content: attr(data-num);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-bottom::after {
+  position: absolute;
+  left: 0px;
+  bottom: -45px;
+  content: attr(data-num2);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-bottom2::before {
+  position: absolute;
+  right: 8px;
+  bottom: -25px;
+  content: attr(data-num);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-bottom2::after {
+  position: absolute;
+  right: 0px;
+  bottom: -45px;
+  content: attr(data-num2);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+
+
+
+
+.dot-top::before {
+  position: absolute;
+  left: 12px;
+  top: -24px;
+  content: attr(data-num);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-top::after {
+  position: absolute;
+  left: 12px;
+  top: -40px;
+  content: attr(data-num2);   /* <-- wstawia wartość z HTML */
+  color: #939393;                 /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-bottom-left::before {
+  position: absolute;
+  top: 23px;
+  left: -12px;
+  content: attr(data-num);
+  color: #939393;             /* jeśli to ma być tekst, usuń width/height */
+}
+
+.dot-bottom-left::after {
+  position: absolute;
+  top: 37px;
+  left: -26px;
+  content: attr(data-num2);
+  color: #939393;    /* jeśli to ma być tekst, usuń width/height */
+}
+
+.dot-bottom-left2::before {
+  position: absolute;
+  top: 41px;
+  left: -9px;
+  content: attr(data-num);
+  color: #939393;       /* jeśli to ma być tekst, usuń width/height */
+  }
+
+  .dot-bottom-right2::before {
+    position: absolute;
+    top: 41px;
+    right: -9px;
+    content: attr(data-num);
+    color: #939393;       /* jeśli to ma być tekst, usuń width/height */
+    }
+
+  .dot-bottom-right::before {
+    position: absolute;
+    top: 23px;
+    right: -12px;
+    content: attr(data-num);
+    color: #939393;   /* jeśli to ma być tekst, usuń width/height */
+    }
+
+  .dot-bottom-right::after {
+    position: absolute;
+        top: 37px;
+        right: -26px;
+        content: attr(data-num2);
+        color: #939393;
+
+    }
+
+
+
+.dot-top-left::before {
+  position: absolute;
+  top: -18px;
+  left: -8px;
+  content: attr(data-num);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-top-left::after {
+  position: absolute;
+  top: -30px;
+  left: -22px;
+  content: attr(data-num2);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-top-left2::before {
+  position: absolute;
+  top: -7px;
+  left: -12px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-top-left2::after {
+  position: absolute;
+  top: -19px;
+  left: -25px;
+  content: attr(data-num2);
+  color: #939393;          /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+
+.dot-top-left3::before {
+  position: absolute;
+  top: -29px;
+  left: 2px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-top-left3::after {
+  position: absolute;
+  top: -41px;
+  left: -10px;
+  content: attr(data-num2);
+  color: #939393;       /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+
+.dot-top-right::before {
+  position: absolute;
+  top: -29px;
+  right: 2px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-top-right::after {
+  position: absolute;
+  top: -41px;
+  right: -10px;
+  content: attr(data-num2);
+  color: #939393;       /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+.dot-top-right2::before {
+  position: absolute;
+  top: -29px;
+  right: -12px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-top-right3::before {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-top-right3::after {
+  position: absolute;
+  top: -19px;
+  right: -25px;
+  content: attr(data-num2);
+  color: #939393;
+}
+
+
+.dot-right::before {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-right::after {
+  position: absolute;
+  top: -19px;
+  right: -25px;
+  content: attr(data-num2);
+  color: #939393;
+}
+
+.dot-right2::before {
+  position: absolute;
+  top: 6px;
+  right: -12px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-right2::after {
+  position: absolute;
+  top: 18px;
+  right: -27px;
+  content: attr(data-num2);
+  color: #939393;
+}
+
+
+.dot-top-left4:before {
+  position: absolute;
+  top: -31px;
+  left: -14px;
+  content: attr(data-num);
+  color: #939393;
+}
+
+
+.dot-left::before,
+.dot-left2::before {
+  position: absolute;
+  top: 6px;
+  left: -12px;
+  content: attr(data-num);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+.dot-left::after {
+  position: absolute;
+  top: 0px;
+  left: -27px;
+  content: attr(data-num2);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+.dot-left2::after {
+  position: absolute;
+  top: 18px;
+  left: -27px;
+  content: attr(data-num2);   /* <-- wstawia wartość z HTML */
+  color: #939393;               /* jeśli to ma być tekst, usuń width/height */
+}
+
+
+
+
 .item:nth-child(1)::before {
   position: absolute;
   left: 12px;
@@ -133,7 +424,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #939393;
+  background-color: #e2e2e2;
 }
 
 .item:nth-child(7)::before {
@@ -167,7 +458,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #939393;
+  background-color: #e2e2e2;
 }
 
 .item:nth-child(14)::before {
@@ -178,7 +469,10 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #939393;
+  background-color: #e2e2e2;
 }
 
 
+.item::before {
+  color: #e2e2e2;
+}

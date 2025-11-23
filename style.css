@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(200deg, #0d0d0f 0%, #18182d 50%, #0f0f10 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #e0e0e0;
+}
+
+.circle {
+  position: relative;
+  width: 480px;  /* szerzej */
+  height: 360px; /* niżej — elipsa */
+  margin: 40px auto;
+}
+
+.circle:after {
+  content: "By Toxer";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-40%);
+  opacity: .2;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--color);
+
+  --total: 25;
+  --angle: calc(360deg / var(--total) * var(--i));
+
+  transform:
+      scaleY(0.75)
+      rotate(calc(var(--angle) - 90deg))
+      translate(240px)
+      rotate(calc(-1 * (var(--angle) - 90deg)));
+}
+
+.arrow-number {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  pointer-events: none; /* nie przeszkadza w klikaniu */
+  white-space: nowrap;
+  line-height: 24px;
+  z-index: 99;
+}
+
+.item-top .arrow-number {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-bottom .arrow-number {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.item-right .arrow-number {
+  position: absolute;
+  left: 40px;
+  top: 3px;
+}
+
+.item-left .arrow-number {
+  position: absolute;
+  right: 40px;
+  top: 3px;
+}
+
+
+
+.preview-img {
+  position: absolute;
+  top: 22px;
+  left: -17px;
+  z-index: -1;
+  width: 737px;
+  opacity: 1;
+}
+
+.item:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+/* 🎨 25 identycznych kolorów pobranych z twojego z
+djęcia */
+.item:nth-child(1)  { --color: #bc3d38; }
+.item:nth-child(2)  { --color: #bb6936; }
+.item:nth-child(3)  { --color: #b68639; }
+.item:nth-child(4)  { --color: #b6bd3a; }
+.item:nth-child(5)  { --color: #b6bb37; }
+.item:nth-child(6)  { --color: #a5bf37; }
+.item:nth-child(7)  { --color: #8cbe3a; }
+.item:nth-child(8)  { --color: #6bbe3a; }
+.item:nth-child(9)  { --color: #42c038; }
+.item:nth-child(10) { --color: #39c152; }
+.item:nth-child(11) { --color: #3ac275; }
+.item:nth-child(12) { --color: #3ac192; }
+.item:nth-child(13) { --color: #35bea7; }
+.item:nth-child(14) { --color: #3bb8b6; }
+.item:nth-child(15) { --color: #3b9eb2; }
+.item:nth-child(16) { --color: #3c80b6; }
+.item:nth-child(17) { --color: #385bb3; }
+.item:nth-child(18) { --color: #433db6; }
+.item:nth-child(19) { --color: #683eb1; }
+.item:nth-child(20) { --color: #8941b2; }
+.item:nth-child(21) { --color: #a53db4; }
+.item:nth-child(22) { --color: #b63eb1; }
+.item:nth-child(23) { --color: #bd45a0; }
+.item:nth-child(24) { --color: #bd4687; }
+.item:nth-child(25) { --color: #b03f5c; }

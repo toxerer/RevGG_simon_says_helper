@@ -124,3 +124,61 @@ body {
 .item:nth-child(23) { --color: #bd45a0; }
 .item:nth-child(24) { --color: #bd4687; }
 .item:nth-child(25) { --color: #b03f5c; }
+
+.item:nth-child(1)::before {
+  position: absolute;
+  left: 12px;
+  bottom: -15px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #939393;
+}
+
+.item:nth-child(7)::before {
+  position: absolute;
+  left: -15px;
+  top: 12px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #939393;
+}
+
+.item:nth-child(20)::before {
+  position: absolute;
+  right: -15px;
+  top: 12px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #939393;
+}
+
+
+.item:nth-child(13)::before {
+  position: absolute;
+  top: -15px;
+  left: 12px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #939393;
+}
+
+.item:nth-child(14)::before {
+  position: absolute;
+  top: -15px;
+  left: 12px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #939393;
+}
+
+

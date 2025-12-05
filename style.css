@@ -214,16 +214,16 @@ djęcia */
 
 .dot-bottom-left2::before {
   position: absolute;
-  top: 41px;
-  left: -9px;
+  top: 34px;
+  left: -5px;
   content: attr(data-num);
   color: #939393;       /* jeśli to ma być tekst, usuń width/height */
   }
 
   .dot-bottom-right2::before {
     position: absolute;
-    top: 41px;
-    right: -9px;
+    top: 34px;
+    right: -6px;
     content: attr(data-num);
     color: #939393;       /* jeśli to ma być tekst, usuń width/height */
     }
@@ -323,8 +323,8 @@ djęcia */
 
 .dot-top-right2::before {
   position: absolute;
-  top: -29px;
-  right: -12px;
+  top: -21px;
+  right: -11px;
   content: attr(data-num);
   color: #939393;
 }
@@ -385,8 +385,8 @@ djęcia */
 
 .dot-top-left4:before {
   position: absolute;
-  top: -31px;
-  left: -14px;
+  top: -21px;
+  left: -9px;
   content: attr(data-num);
   color: #939393;
 }
@@ -480,5 +480,6 @@ djęcia */
 .item::before {
   color: #e2e2e2;
 }
+
 
 
